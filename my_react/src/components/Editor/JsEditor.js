@@ -9,7 +9,7 @@ import { EditorContext } from "../../context/context"
 
 const JsEditor = () => {
 
-    const [js, setJs] = useContext(EditorContext)
+    const { js, setJs } = useContext(EditorContext)
 
   return (
       <AceEditor
@@ -29,7 +29,8 @@ const JsEditor = () => {
           enableBasicAutocompletion: true,
           enableLiveAutocompletion: true,
           enableSnippets: true,
-          tabSize: 2
+          tabSize: 2,
+          useWorker: false
         }}
       />
    

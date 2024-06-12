@@ -9,7 +9,7 @@ import { EditorContext } from "../../context/context"
 
 const CssEditor = () => {
 
-    const [css, setCss] = useContext(EditorContext)
+    const { css, setCss } = useContext(EditorContext)
 
   return (
       <AceEditor
@@ -29,7 +29,8 @@ const CssEditor = () => {
           enableBasicAutocompletion: true,
           enableLiveAutocompletion: true,
           enableSnippets: true,
-          tabSize: 2
+          tabSize: 2,
+          useWorker: false
         }}
       />
    

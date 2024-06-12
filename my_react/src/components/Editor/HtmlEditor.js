@@ -30,7 +30,8 @@ const { html, setHtml } = useContext(EditorContext)
           enableBasicAutocompletion: true,
           enableLiveAutocompletion: true,
           enableSnippets: true,
-          tabSize: 2
+          tabSize: 2,
+          useWorker: false
         }}
       />
    
